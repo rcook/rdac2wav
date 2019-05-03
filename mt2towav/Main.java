@@ -209,10 +209,10 @@ public class MT2Wav {
             sb.setCharAt(7,'.');
         }
         else if ("111".equals(sb.substring(0,3))) {
-            if ("000".equals(sb.substring(4,7)) &#0124;&#0124;
-            "001".equals(sb.substring(4,7)) &#0124;&#0124;
-            "010".equals(sb.substring(4,7)) &#0124;&#0124;
-            "011".equals(sb.substring(4,7)) &#0124;&#0124;
+            if ("000".equals(sb.substring(4,7)) ||
+            "001".equals(sb.substring(4,7)) ||
+            "010".equals(sb.substring(4,7)) ||
+            "011".equals(sb.substring(4,7)) ||
             "100".equals(sb.substring(4,7))) {
                 sb.setCharAt(3,'.');
                 sb.setCharAt(7,'.');
@@ -290,7 +290,7 @@ public class MT2Wav {
                 case 'g': outIndex = 16; break;
                 default: break;
             }
-            if (outIndex < 1 &#0124;&#0124; outIndex > 16) continue;
+            if (outIndex < 1 || outIndex > 16) continue;
             int byteIndex = i/8;
             int bitIndex  = i%8;
             out[outIndex] <<= 1;
