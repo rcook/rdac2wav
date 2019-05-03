@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <sys/stat.h>
+#include "platform.h"
 
 /*
     VS to WAV file converter for Roland VS. Version 0.99
