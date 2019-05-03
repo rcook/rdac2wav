@@ -10,7 +10,7 @@ import java.util.*;
 // Licensed as LGPL
 //
 
-public class MT2Wav {
+class MT2Wav {
 
     public static int BITMASK[] = {0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
 
