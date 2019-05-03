@@ -1,6 +1,10 @@
-#include <stdio.h>
-#include <sys/stat.h>
+#include "decode.h"
 #include "platform.h"
+#include "wav.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/stat.h>
 
 /*
     VS to WAV file converter for Roland VS. Version 0.99
@@ -9,6 +13,10 @@
 
     Special thanks to Danielo for solving many of the MTP patterns.
 */
+
+int isSupportedBitDepth(int bitDepth);
+int isSupportedClusterSize(char *size);
+int isSupportedMode(char *mode);
 
 long fsize(const char *const name);
 

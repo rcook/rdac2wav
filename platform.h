@@ -1,5 +1,5 @@
-#ifndef __MAIN_H_INCLUDED
-#define __MAIN_H_INCLUDED
+#ifndef __PLATFORM_H_INCLUDED
+#define __PLATFORM_H_INCLUDED
 
 #define stricmp strcasecmp
 
