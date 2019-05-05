@@ -1,1 +1,6 @@
 /_build/
+/rdac2wav
+/.vscode
+
+*.BR0
+*.wav
